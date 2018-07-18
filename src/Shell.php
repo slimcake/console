@@ -64,8 +64,8 @@ class Shell
      */
     protected static function createCommand($commandName, $options = array())
     {
-        $commandName = Inflector::camelcase(sprintf('%s_command', $commandName));
-        $command = sprintf('App\\Commands\\%s', $commandName);
+        $className = Inflector::camelcase(sprintf('%s_command', $commandName));
+        $command = sprintf('App\\Commands\\%s', $className);
 
         if (class_exists($command) === false) {
             throw new Exception(sprintf('Command "%s" not found', $command));
