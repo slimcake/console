@@ -1,0 +1,13 @@
+{
+  "name": "slimcake/console",
+  "description": "Console classes for shell commands and scripts",
+  "license": "MIT",
+  "require": {
+    "php": ">=5.3"
+  },
+  "autoload": {
+    "psr-4": {
+      "Slimcake\\Console\\": "src/"
+    }
+  }
+}
